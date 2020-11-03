@@ -1,45 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-  <title>CS4404 Mission 1 Interface</title>
-  <meta charset="utf-8" />
-  <script src="script.js"></script>
+    <title> BIKE WPI </title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
 </head>
 
 <body>
-  <h1 style="vertical-align: middle">2020 Shueworld Election</h1>
+    <!-- HTML5 article tag for content -->
+    <div id="content">
+   
+    <header>BIKE WPI</header>
 
-  <p>
-    To Vote:<br><br>
-    You may only vote once. <br>
-    Select the button to the left of the candidate you wish to elect.<br>
-    When you have reviewed your selection and are satisfied, press the Submit button to cast your ballot.
-  </p>
+   <!-- WPI image -->
+   <img id="WPI" src="gompei.jpg" width="320" />
 
-  <br>
+   <!-- H1 means 1st level heading -->
+   <h1>Welcome to Bike WPI</h1>
+    
+   <!-- P stands for paragraph -->
+   <p>We believe in bicycles! Everything you need to be a WPI Cyclist.</p>
+   
+   <!-- Navigation buttons -->
+   <nav id="main_nav">
+      <ul>
+         <!-- LI stands for list item -->
+         <li><a href="stores.html">Bike Stores </a></li>
+         <li><a href="maps.html">Bike Maps </a></li>
+         <li><a href="ride.html">Go for a Ride</a></li>
+      </ul>
+   </nav>
 
-  <h2 class="title">Elect Your Sneaker of the House:</h2>
-
-  <form action="api/submitballot" method="POST">
-    <label class="radiofont">
-      <input type="radio" id="reebokobama" name="candidates" value="reebokobama">Reebok Obama
-    </label>
-    <br><br>
-    <label class="radiofont">
-      <input type="radio" id="nikepence" name="candidates" value="nikepence">Nike Pence
-    </label>
-    <br><br>
-    <label class="radiofont">
-      <input type="radio" id="chuckshoemer" name="candidates" value="chuckshoemer">Chuck Shoemer
-    </label>
-
-    <br><br><br>
-
-    <button>
-      Submit
-    </button>
-
-  </form>
-
+   <footer>CS3041: Human-Computer Interaction </footer>
+    </div>
 </body>
 </html>
