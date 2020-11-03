@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CS4404 Mission 1 Interface</title>
+  <meta charset="utf-8" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1 style="vertical-align: middle">2020 Shueworld Election</h1>
+
+  <p>
+    To Vote:<br><br>
+    You may only vote once. <br>
+    Select the button to the left of the candidate you wish to elect.<br>
+    When you have reviewed your selection and are satisfied, press the Submit button to cast your ballot.
+  </p>
+
+  <br>
+
+  <h2 class="title">Elect Your Sneaker of the House:</h2>
+
+  <form action="api/submitballot" method="POST">
+    <label class="radiofont">
+      <input type="radio" id="reebokobama" name="candidates" value="reebokobama">Reebok Obama
+    </label>
+    <br><br>
+    <label class="radiofont">
+      <input type="radio" id="nikepence" name="candidates" value="nikepence">Nike Pence
+    </label>
+    <br><br>
+    <label class="radiofont">
+      <input type="radio" id="chuckshoemer" name="candidates" value="chuckshoemer">Chuck Shoemer
+    </label>
+
+    <br><br><br>
+
+    <button>
+      Submit
+    </button>
+
+  </form>
+
+</body>
+</html>
